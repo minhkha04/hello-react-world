@@ -7,7 +7,6 @@ import FooterDemo from './components/FooterDemo';
 import RenderDoctor from "./components/RenderDoctor.jsx";
 import DemoCss from "./components/demoCss/DemoCss.jsx";
 
-
 function App() {
     const [count, setCount] = useState(0)
     return (

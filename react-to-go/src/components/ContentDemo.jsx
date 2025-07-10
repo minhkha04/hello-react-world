@@ -1,4 +1,6 @@
 import React from 'react'
+import ExampleState from "./demoState/ExampleState.jsx";
+
 const ContentDemo = () => {
     let students = [
         {
@@ -32,6 +34,7 @@ const ContentDemo = () => {
                     </div>
                 );
             })}
+            <ExampleState />
         </div>
     )
 }
