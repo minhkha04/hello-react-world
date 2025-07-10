@@ -1,5 +1,6 @@
 import React from 'react'
 import ExampleState from "./demoState/ExampleState.jsx";
+import DemoCss from "./demoCss/DemoCss.jsx";
 
 const ContentDemo = () => {
     let students = [
@@ -34,6 +35,7 @@ const ContentDemo = () => {
                     </div>
                 );
             })}
+            <DemoCss/>
             <ExampleState />
         </div>
     )
