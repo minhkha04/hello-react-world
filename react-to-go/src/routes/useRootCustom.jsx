@@ -6,6 +6,7 @@ import Phone from "../components/myPhone/Phone.jsx";
 import PokeDetail from "../components/PokeDetail.jsx";
 import ExampleProps from "../components/demoProps/ExampleProps.jsx";
 import {path} from "../common/path.js";
+import DemoRedux from "../components/demoRedux/DemoRedux.jsx";
 
 const UseRootCustom = () => {
     return useRoutes([
@@ -18,13 +19,18 @@ const UseRootCustom = () => {
                     element: <ExampleProps/>
                 },
                 {
-                  path: path.myPhone,
-                  element: <Phone/>
+                    path: path.myPhone,
+                    element: <Phone/>
                 },
                 {
-                  path: `${path.pokeDetail}/:id`,
-                  element: <PokeDetail/>
+                    path: `${path.pokeDetail}/:id`,
+                    element: <PokeDetail/>
                 },
+                {
+                    path: path.demoRedux,
+                    element: <DemoRedux/>
+                },
+
             ]
         },
         {
