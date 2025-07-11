@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 const ItemPokemon = ({pokemon, index}) => {
     const {name, image, type, attack, defense} = pokemon;
@@ -78,10 +79,15 @@ const ItemPokemon = ({pokemon, index}) => {
                 </div>
 
                 {/* Action Button */}
-                <button
-                    className="w-full mt-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-bold rounded-2xl transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/50">
-                    Detail
-                </button>
+                <Link
+                    to={`poke-detail/${name}`}
+                    className="block w-full mt-6 py-3 px-6 bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 hover:from-purple-700 hover:via-pink-700 hover:to-indigo-700 text-white font-bold text-center rounded-2xl transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/50 border border-white/20 backdrop-blur-sm relative overflow-hidden group"
+                >
+                    <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>
+                    <span className="relative z-10 flex items-center justify-center gap-2">
+                        <span>View Details</span>
+                    </span>
+                </Link>
             </div>
             <style jsx>{`
                 @keyframes fadeIn {

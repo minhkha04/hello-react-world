@@ -1,0 +1,5 @@
+export const path = {
+    homePage: "/",
+    myPhone: "/my-phone",
+    pokeDetail: "/poke-detail",
+}
