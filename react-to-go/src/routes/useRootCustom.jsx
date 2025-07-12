@@ -7,6 +7,7 @@ import PokeDetail from "../components/PokeDetail.jsx";
 import ExampleProps from "../components/demoProps/ExampleProps.jsx";
 import {path} from "../common/path.js";
 import DemoRedux from "../components/demoRedux/DemoRedux.jsx";
+import MyGame from "../components/myGame/MyGame.jsx";
 
 const UseRootCustom = () => {
     return useRoutes([
@@ -29,6 +30,10 @@ const UseRootCustom = () => {
                 {
                     path: path.demoRedux,
                     element: <DemoRedux/>
+                },
+                {
+                  path: path.myGame,
+                  element: <MyGame/>
                 },
 
             ]

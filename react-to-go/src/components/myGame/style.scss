@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Pony';
+  src: url("./../../assets/font/Pony.ttf") format('truetype');
+}
+
+.my-game {
+  font-family: 'Pony';
+  @apply text-center;
+}

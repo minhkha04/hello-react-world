@@ -5,7 +5,7 @@ import {useSelector} from "react-redux";
 const ExampleProps = () => {
     const pokemon = useSelector(state => state.pokemonSlice);
     return (
-        <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-8 px-4">
+        <div>
             <div className="container mx-auto">
                 {/* Header với hiệu ứng glow */}
                 <div className="text-center mb-12">

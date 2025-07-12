@@ -19,14 +19,17 @@ const HomeTemplate = () => {
             to: path.demoRedux,
             content: "Demo Redux"
         },
+        {
+            to: path.myGame,
+            content: "My Game"
+        },
     ]
     const {
         token: {colorBgContainer, borderRadiusLG},
     } = theme.useToken();
     const userName = useSelector(state => state.userSlice.fullName);
-    console.log(userName)
     return (
-        <Layout className={"min-h-screen bg-black"}>
+        <Layout className={"bg-black"}>
             <Header
                 className="bg-gray-900 border-b border-cyan-500 relative overflow-hidden"
                 style={{
@@ -37,6 +40,7 @@ const HomeTemplate = () => {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
+                    minHeight: 'calc((100vh - 85vh)/2)',
                 }}
             >
                 {/* Galaxy glow effect */}
@@ -73,21 +77,18 @@ const HomeTemplate = () => {
 
             <Content className="bg-black" style={{padding: '0 48px'}}>
                 <div
-                    className="bg-gray-900 border border-cyan-500/30 relative overflow-hidden"
+                    className="min-h-[85vh] bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-8 px-4"
                     style={{
                         borderRadius: borderRadiusLG,
                     }}
                 >
-                    {/* Galaxy background effect */}
-                    <div
-                        className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-purple-500/5 to-pink-500/5"></div>
                     <Outlet/>
                 </div>
             </Content>
 
             <Footer
                 className="bg-gray-900 border-t border-purple-500 text-center relative overflow-hidden"
-                style={{textAlign: 'center'}}
+                style={{textAlign: 'center', minHeight: 'calc((100vh - 85vh)/2)'}}
             >
                 {/* Galaxy glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-cyan-500/10"></div>
