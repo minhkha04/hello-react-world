@@ -7,6 +7,7 @@ import {store} from "./redux/configStore.js";
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
+        {/*Provider store={store}> use for Redux*/}
         <Provider store={store}>
             <App/>
         </Provider>

@@ -4,4 +4,6 @@ export const path = {
     pokeDetail: "/poke-detail",
     demoRedux: "/demo-redux",
     myGame: "/my-game",
+    demoUseEffect: "/demo-use-effect",
+    demoUseEffectDetail: "/demo-use-effect-detail",
 }

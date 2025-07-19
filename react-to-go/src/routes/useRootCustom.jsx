@@ -8,6 +8,8 @@ import ExampleProps from "../components/demoProps/ExampleProps.jsx";
 import {path} from "../common/path.js";
 import DemoRedux from "../components/demoRedux/DemoRedux.jsx";
 import MyGame from "../components/myGame/MyGame.jsx";
+import DemoUseEffect from "../components/demoUseEffect/DemoUseEffect.jsx";
+import DemoUseEffectDetail from "../components/demoUseEffect/DemoUseEffectDetail.jsx";
 
 const UseRootCustom = () => {
     return useRoutes([
@@ -35,7 +37,18 @@ const UseRootCustom = () => {
                   path: path.myGame,
                   element: <MyGame/>
                 },
-
+                {
+                    path: path.demoUseEffect,
+                    element: <DemoUseEffect/>
+                },
+                {
+                    path: path.demoUseEffect,
+                    element: <DemoUseEffect/>
+                },
+                {
+                    path: `${path.demoUseEffectDetail}/:id`,
+                    element: <DemoUseEffectDetail/>
+                },
             ]
         },
         {

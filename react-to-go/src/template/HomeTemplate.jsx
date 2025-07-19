@@ -23,13 +23,17 @@ const HomeTemplate = () => {
             to: path.myGame,
             content: "My Game"
         },
+        {
+            to: path.demoUseEffect,
+            content: "Demo Use Effect"
+        },
     ]
     const {
         token: {colorBgContainer, borderRadiusLG},
     } = theme.useToken();
     const userName = useSelector(state => state.userSlice.fullName);
     return (
-        <Layout className={"bg-black"}>
+        <Layout className={"bg-gray-900"}>
             <Header
                 className="bg-gray-900 border-b border-cyan-500 relative overflow-hidden"
                 style={{
@@ -75,7 +79,7 @@ const HomeTemplate = () => {
                 <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-purple-500"></div>
             </Header>
 
-            <Content className="bg-black" style={{padding: '0 48px'}}>
+            <Content className="container">
                 <div
                     className="min-h-[85vh] bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-8 px-4"
                     style={{
