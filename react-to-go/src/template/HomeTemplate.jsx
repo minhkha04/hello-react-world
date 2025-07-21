@@ -83,9 +83,9 @@ const HomeTemplate = () => {
                 <div className="absolute bottom-0 right-0 w-8 h-8 border-r-2 border-b-2 border-purple-500"></div>
             </Header>
 
-            <Content className="container">
+            <Content>
                 <div
-                    className="min-h-[85vh] bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-8 px-4"
+                    className="min-h-[85vh] bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 py-8 px-4 container"
                     style={{
                         borderRadius: borderRadiusLG,
                     }}

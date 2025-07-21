@@ -9,17 +9,7 @@ const MyGame = () => {
     const  dispatch = useDispatch();
     return (
         <div>
-            {/* Galaxy background effects */}
-            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-purple-500/10"></div>
-            <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-purple-500/5 to-pink-500/5"></div>
-            
-            {/* Animated stars */}
-            <div className="absolute top-4 left-10 text-cyan-400 animate-pulse">⭐</div>
-            <div className="absolute top-20 right-20 text-purple-400 animate-bounce">✨</div>
-            <div className="absolute bottom-20 left-20 text-pink-400 animate-pulse">💫</div>
-            <div className="absolute bottom-10 right-10 text-cyan-400 animate-bounce">⭐</div>
-
-            <div className="relative z-10 container mx-auto max-w-6xl">
+            <div>
                 <h2 className="text-4xl md:text-6xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 uppercase tracking-wider">
                     This is my game component.
                 </h2>
