@@ -6,4 +6,5 @@ export const path = {
     myGame: "/my-game",
     demoUseEffect: "/demo-use-effect",
     demoUseEffectDetail: "/demo-use-effect-detail",
+    demoFormReact: "/demo-form-react",
 }

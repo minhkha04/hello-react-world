@@ -27,6 +27,10 @@ const HomeTemplate = () => {
             to: path.demoUseEffect,
             content: "Demo Use Effect"
         },
+        {
+            to: path.demoFormReact,
+            content: "Form React"
+        },
     ]
     const {
         token: {colorBgContainer, borderRadiusLG},

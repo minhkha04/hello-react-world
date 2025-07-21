@@ -10,6 +10,7 @@ import DemoRedux from "../components/demoRedux/DemoRedux.jsx";
 import MyGame from "../components/myGame/MyGame.jsx";
 import DemoUseEffect from "../components/demoUseEffect/DemoUseEffect.jsx";
 import DemoUseEffectDetail from "../components/demoUseEffect/DemoUseEffectDetail.jsx";
+import DemoFormReact from "../components/demoFormReact/DemoFormReact.jsx";
 
 const UseRootCustom = () => {
     return useRoutes([
@@ -48,6 +49,10 @@ const UseRootCustom = () => {
                 {
                     path: `${path.demoUseEffectDetail}/:id`,
                     element: <DemoUseEffectDetail/>
+                },
+                {
+                    path: path.demoFormReact,
+                    element: <DemoFormReact/>
                 },
             ]
         },
